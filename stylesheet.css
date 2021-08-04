@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+footer{
+    margin: 5em 0 0 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    min-width: 262px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsl(204, 43%, 93%);
+    border-radius: 5px;
+    width: 70%;
+    height: fit-content;
+    min-width: 262px;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px  hsl(218, 22%, 67%);
+}
+
+.first {
+    background-color: white;
+    padding: 1.8em 1.5em;
+}
+
+.second {
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(179, 62%, 43%);
+    padding: 1.8em 1.5em;
+}
+
+.third {
+    color: hsl(204, 43%, 93%);
+    background-color:  hsl(179, 70%, 44%);
+    padding: 1.8em 1.5em;
+}
+
+.first-h1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 1.25em;
+}
+
+.first-h2 {
+    font-size: 1.0em;
+    font-weight: bold;
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 1em;
+}
+
+.first-p {
+    color: hsl(218, 22%, 67%);
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+.second-h2 {
+    font-size: 1.0em;
+    padding-bottom: 1.25em;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.price-per {
+    opacity: 50%;
+    position: relative;
+    bottom: 6px;
+    font-size: 0.9em;
+}
+
+.second-p {
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+.signup {
+    margin-top: 2em;
+    padding: 10%, 20%;
+    width: 100%;
+    max-width: 350px;
+    height: 3em;
+    background-color:hsl(71, 73%, 54%);
+    border:none;
+    border-radius: 7.5px;
+    color:hsl(204, 43%, 93%);
+    transition: all 0.25s;
+    box-shadow: 2px 2px 15px  hsl(218, 22%, 67%);
+}
+
+.signup:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em hsl(71, 73%, 54%);
+    transform: translateY(-0.1em);
+    cursor:pointer;
+    color:white;
+    box-shadow: 2px 2px 15px  hsl(218, 22%, 67%);
+}
+
+.third-h2 {
+    font-size: 1.0em;
+    padding-bottom: 1.25em;
+    font-weight: bold;
+}
+
+.third-p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    color: hsl(204, 43%, 93%);
+}
+
+footer {
+    position:absolute;
+    bottom: 20px;
+}
+
+
+@media (min-width: 580px) {
+    .container{
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 750px;
+    }
+    .first{
+        background-size: cover;
+        width:100%;
+        max-width: 800px;
+        padding: 3em 2em;
+    }
+    .second{
+        background-size: cover;
+        width: calc(50% - 4em);
+        min-width: 100px;
+        padding: 3em 2em;
+    }
+    .third{
+        background-size: cover;
+        width: calc(50% - 4em);
+        min-width: 100px;
+        padding: 3em 2em;
+    }
+} 
